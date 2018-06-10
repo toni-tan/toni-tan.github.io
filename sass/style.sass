@@ -1,0 +1,158 @@
+@import 'mysass'
+
+body
+	position: relative
+	height: 100%
+
+div
+	overflow: hidden
+
+.mynav
+	+x(navbar)
+	+x(navbar-default)
+	+x(navbar-fixed-top)
+	background: transparent
+	border: none
+	font-family: 'Raleway', sans-serif
+	transition: background 1s
+	.navbar-brand
+		color: #fff !important
+.mynav.active
+	background: #909497
+	box-shadow: 0 5px 5px #888888
+
+
+//.mynav.darknav
+	//background: red
+//.mynav.servicetab
+	//background: red
+
+.mylinks
+	+x(nav)
+	+x(navbar-nav)
+	+x(navbar-right)
+	a
+		color: #fff !important
+		&:hover
+			font-weight: 600
+	.active
+		a
+			background: transparent !important
+			font-weight: 600
+
+
+.header
+	position: relative
+	h1
+		margin: 0
+	.h-content
+		position: absolute
+		width: 100%
+		top: 40%
+		text-align: center
+		h1
+			color: white !important
+			font-size: 60px
+			font-family: 'Bitter', serif
+			span
+				font-weight: bold !important
+		p
+			 font-family: 'Roboto Condensed', sans-serif
+			 color: white !important
+			 font-size: 20px
+
+#about
+	background: #d9d9d9 !important
+	color: #839192     !important
+	width: 100%
+
+	h3
+		font-family: 'Bitter', serif
+		margin-top: 40px
+		text-transform: uppercase
+		font-size: 30px
+		span
+			letter-spacing: 3px
+			font-weight: 100
+	p
+		font-family: 'Roboto Condensed', sans-serif
+		font-size: 16px
+		text-align: justify
+		color: #626567  !important
+		span
+			text-decoration: line-through
+
+
+
+#services
+	margin-bottom: 20px
+	h1
+		margin-top: 20px
+		font-family: 'Bitter', serif
+		text-transform: uppercase
+		text-align: center
+		color: #626567
+	.box
+		font-family: 'Roboto Condensed', sans-serif
+		font-size: 16px
+		text-align: center
+		color: #626567  !important
+#contact
+	background: #d9d9d9
+	h1
+	font-family: 'Bitter', serif
+	text-transform: uppercase
+	text-align: center
+	color: #839192
+	p
+		font-family: 'Roboto Condensed', sans-serif
+		font-size: 20px
+		text-align: justify
+		color: #626567  !important
+		margin-top: 20px !important
+		margin-bottom: 5px
+		text-transform: uppercase
+		text-align: center
+
+	.icons
+  		background-color: transparent
+  		border: solid grey 3px
+  		padding: 30px
+  		border-radius: 50%
+  		display: inline-block
+  		font-size: 50px
+  		color: grey
+  		margin-right: 50px
+  		margin-left: 50px
+  		&.fa-github:hover
+  			background-color: #323131
+  			color: white
+  		&.fa-twitter:hover
+  			background-color: #1da1f2
+  			color: white
+  		&.fa-instagram:hover
+  			background-color: white
+  			color: #2e2e2e
+  		&.fa-spotify:hover
+  			background-color: #1db954
+  			color: white
+  		&.fa-linkedin:hover
+  			background-color: #0077b5
+  			color: white
+
+#footer
+	margin: 0
+	background: #909497  !important
+	p
+		text-align: left
+		color: #D7DBDD   !important
+		font-family: 'Raleway', sans-serif
+		font-weight: bolder
+
+
+
+
+
+
+
+
