@@ -71,6 +71,7 @@ div
 		margin-top: 40px
 		text-transform: uppercase
 		font-size: 30px
+		line-height: 1.6
 		span
 			letter-spacing: 3px
 			font-weight: 100
@@ -97,6 +98,38 @@ div
 		font-size: 16px
 		text-align: center
 		color: #626567  !important
+		.inner-box
+			height: 250px
+			width: 450px
+			border: solid #616A6B 2px
+			border-radius: 5%
+			position: relative
+			//transition: .5s ease
+			.overlay
+				position: absolute
+				top: 0
+			  	bottom: 0
+			  	left: 0
+			  	right: 0
+			  	height: 100%
+			  	width: 100%
+			  	opacity: 0
+			  	transition: .5s ease
+			  	background-color: #008CBA
+			&.overlay:hover
+				opacity: 1
+			.text
+			  color: black
+			  font-size: 20px
+			  position: absolute
+			  top: 50%
+			  left: 50%
+			  transform: translate(-50%, -50%)
+			  -ms-transform: translate(-50%, -50%)
+			  text-align: center
+
+
+
 #contact
 	background: #d9d9d9
 	h1
@@ -113,17 +146,25 @@ div
 		margin-bottom: 5px
 		text-transform: uppercase
 		text-align: center
+		a
+			color: grey
+  			transition: 0.3s
 
 	.icons
   		background-color: transparent
   		border: solid grey 3px
-  		padding: 30px
+  		padding: 20px 20px 10px
   		border-radius: 50%
   		display: inline-block
   		font-size: 50px
   		color: grey
   		margin-right: 50px
   		margin-left: 50px
+  		transition: 0.5s
+  		width: 100px
+  		//line-height: .1
+  		height: 100px
+  		text-align: center
   		&.fa-github:hover
   			background-color: #323131
   			color: white
