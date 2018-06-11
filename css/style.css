@@ -5951,7 +5951,8 @@ div {
     font-family: 'Bitter', serif;
     margin-top: 40px;
     text-transform: uppercase;
-    font-size: 30px; }
+    font-size: 30px;
+    line-height: 1.6; }
     #about h3 span {
       letter-spacing: 3px;
       font-weight: 100; }
@@ -5976,6 +5977,34 @@ div {
     font-size: 16px;
     text-align: center;
     color: #626567  !important; }
+    #services .box .inner-box {
+      height: 250px;
+      width: 450px;
+      border: solid #616A6B 2px;
+      border-radius: 5%;
+      position: relative; }
+      #services .box .inner-box .overlay {
+        position: absolute;
+        top: 0;
+          top-bottom: 0;
+          top-left: 0;
+          top-right: 0;
+          top-height: 100%;
+          top-width: 100%;
+          top-opacity: 0;
+          top-transition: .5s ease;
+          top-background-color: #008CBA; }
+      #services .box .inner-box.overlay:hover {
+        opacity: 1; }
+      #services .box .inner-box .text {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center; }
 
 #contact {
   background: #d9d9d9;
@@ -5992,16 +6021,23 @@ div {
     margin-bottom: 5px;
     text-transform: uppercase;
     text-align: center; }
+    #contact p a {
+      color: grey;
+        color-transition: 0.3s; }
   #contact .icons {
     background-color: transparent;
     border: solid grey 3px;
-    padding: 30px;
+    padding: 20px 20px 10px;
     border-radius: 50%;
     display: inline-block;
     font-size: 50px;
     color: grey;
     margin-right: 50px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    transition: 0.5s;
+    width: 100px;
+    height: 100px;
+    text-align: center; }
     #contact .icons.fa-github:hover {
       background-color: #323131;
       color: white; }
