@@ -1,0 +1,17 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Gulp",
+            "command": "gulp",
+            "args": [
+                "sync"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        }
+    ]
+    }
